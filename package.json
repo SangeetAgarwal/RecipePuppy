@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
-    "lint": "eslint --ext ts,tsx --fix"
+    "lint": "eslint --ext ts,tsx --fix",
+    "prepare": "npx husky install"
   },
   "author": "",
   "license": "ISC",
