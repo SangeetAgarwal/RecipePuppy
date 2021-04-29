@@ -1,5 +1,8 @@
 import { GetServerSideProps, NextPage } from 'next';
-
+import styled from 'styled-components';
+const Title = styled.h1`
+  color: red;
+`;
 interface Props {
   launch: {
     mission: string;
@@ -12,7 +15,7 @@ const IndexPage: NextPage<Props> = ({ launch }) => {
   const date = new Date(launch.timestamp);
   return (
     <main>
-      <h1>Next SpaceX Launch: {launch.mission}</h1>
+      <Title>Next SpaceX Launch: {launch.mission}</Title>
       <p>
         {launch.rocket} will take off from {launch.site} on {date.toDateString()}
       </p>
